@@ -1,0 +1,8 @@
+{{ define "notes/show.html"}}
+{{ template "layouts/header.html" .}}
+    {{ range . }}
+        <h5 class="cart-title">{{ .Name }}</h5>
+        <p class="card-text">{{ .Content }}</p>
+    {{ end }}
+{{ template "layouts/footer.html" .}}
+{{end}}
